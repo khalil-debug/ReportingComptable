@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DataControlConfigs xmlns="http://xmlns.oracle.com/adfm/configuration"
+                    version="11.1.1.64.93" id="DataControls"
+                    Package="ReportingComptable">
+  <AdapterDataControl id="ServletUtilisateur"
+                      FactoryClass="oracle.adf.model.adapter.bean.BeanDCFactoryImpl"
+                      ImplDef="oracle.adf.model.adapter.bean.BeanDefinition"
+                      SupportsTransactions="false" SupportsSortCollection="true"
+                      SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="true"
+                      Definition="controller.ServletUtilisateur"
+                      BeanClass="controller.ServletUtilisateur"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <CreatableTypes>
+      <TypeInfo FullName="java.net.URI"/>
+      <TypeInfo FullName="java.security.PermissionCollection"/>
+      <TypeInfo FullName="java.security.Permission"/>
+      <TypeInfo FullName="java.io.InputStream"/>
+      <TypeInfo FullName="java.io.OutputStream"/>
+      <TypeInfo FullName="java.net.ContentHandler"/>
+      <TypeInfo FullName="java.net.SocketAddress"/>
+      <TypeInfo FullName="java.net.Proxy"/>
+      <TypeInfo FullName="java.net.URLStreamHandler"/>
+      <TypeInfo FullName="java.net.URL"/>
+      <TypeInfo FullName="java.io.BufferedReader"/>
+      <TypeInfo FullName="java.io.PrintWriter"/>
+      <TypeInfo FullName="java.io.File"/>
+      <TypeInfo FullName="javax.servlet.http.Cookie"/>
+      <TypeInfo FullName="controller.ServletUtilisateur"/>
+    </CreatableTypes>
+    <Source>
+      <bean-definition BeanClass="controller.ServletUtilisateur"
+                       xmlns="http://xmlns.oracle.com/adfm/adapter/bean"/>
+    </Source>
+  </AdapterDataControl>
+</DataControlConfigs>

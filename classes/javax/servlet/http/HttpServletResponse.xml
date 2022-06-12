@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93"
+          id="HttpServletResponse" Package="javax.servlet.http"
+          BeanClass="javax.servlet.http.HttpServletResponse" isJavaBased="true">
+  <Attribute Name="characterEncoding" Type="java.lang.String"/>
+  <Attribute Name="contentType" Type="java.lang.String"/>
+  <Attribute Name="bufferSize" Type="int"/>
+  <Attribute Name="committed" IsUpdateable="0" Type="boolean"/>
+  <Attribute Name="locale" Type="java.util.Locale"/>
+  <AccessorAttribute id="outputStream" IsCollection="false"
+                     BeanClass="javax.servlet.ServletOutputStream"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="writer" IsCollection="false"
+                     BeanClass="java.io.PrintWriter"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="void" id="addCookie"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.servlet.http.Cookie"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="boolean" id="containsHeader"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="encodeURL"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="encodeRedirectURL" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String" id="encodeUrl"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="encodeRedirectUrl" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="sendError"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="sendError"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="sendRedirect"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setDateHeader"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="long" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="addDateHeader"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="long" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setHeader"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="addHeader"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setIntHeader"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="addIntHeader"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setStatus"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setStatus"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="setContentLength"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="int" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="flushBuffer"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="resetBuffer"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="reset"
+                  ReturnNodeName="Return"/>
+</JavaBean>

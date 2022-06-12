@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93"
+          id="ServletUtilisateur" Package="controller"
+          BeanClass="controller.ServletUtilisateur" isJavaBased="true">
+  <Attribute Name="initParameterNames" IsUpdateable="0"
+             Type="java.util.Enumeration"/>
+  <Attribute Name="servletInfo" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="servletName" IsUpdateable="0" Type="java.lang.String"/>
+  <AccessorAttribute id="servletConfig" IsCollection="false"
+                     BeanClass="javax.servlet.ServletConfig"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <AccessorAttribute id="servletContext" IsCollection="false"
+                     BeanClass="javax.servlet.ServletContext"
+                     CollectionBeanClass="UpdateableSingleValue"/>
+  <MethodAccessor IsCollection="false" Type="void" id="init"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.servlet.ServletConfig"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="doGet"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="request" Type="javax.servlet.http.HttpServletRequest"
+                   isStructured="true"/>
+    <ParameterInfo id="response" Type="javax.servlet.http.HttpServletResponse"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="doPost"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="request" Type="javax.servlet.http.HttpServletRequest"
+                   isStructured="true"/>
+    <ParameterInfo id="response" Type="javax.servlet.http.HttpServletResponse"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="service"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="javax.servlet.ServletRequest"
+                   isStructured="true"/>
+    <ParameterInfo id="p1" Type="javax.servlet.ServletResponse"
+                   isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="destroy"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.String"
+                  id="getInitParameter" ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="init"
+                  ReturnNodeName="Return"/>
+  <MethodAccessor IsCollection="false" Type="void" id="log"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="log"
+                  ReturnNodeName="Return">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.Throwable" isStructured="false"/>
+  </MethodAccessor>
+  <ConstructorMethod IsCollection="true" Type="controller.ServletUtilisateur"
+                     BeanClass="controller.ServletUtilisateur"
+                     id="ServletUtilisateur"/>
+</JavaBean>

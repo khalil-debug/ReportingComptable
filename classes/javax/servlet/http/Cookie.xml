@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93"
+          id="Cookie" Package="javax.servlet.http"
+          BeanClass="javax.servlet.http.Cookie" isJavaBased="true">
+  <Attribute Name="comment" Type="java.lang.String"/>
+  <Attribute Name="domain" Type="java.lang.String"/>
+  <Attribute Name="maxAge" Type="int"/>
+  <Attribute Name="path" Type="java.lang.String"/>
+  <Attribute Name="secure" Type="boolean"/>
+  <Attribute Name="name" IsUpdateable="0" Type="java.lang.String"/>
+  <Attribute Name="value" Type="java.lang.String"/>
+  <Attribute Name="version" Type="int"/>
+  <MethodAccessor IsCollection="false" Type="java.lang.Object" id="clone"
+                  ReturnNodeName="Return"/>
+  <ConstructorMethod IsCollection="true" Type="javax.servlet.http.Cookie"
+                     BeanClass="javax.servlet.http.Cookie" id="Cookie">
+    <ParameterInfo id="p0" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="p1" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+</JavaBean>
